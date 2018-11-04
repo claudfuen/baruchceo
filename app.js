@@ -35,6 +35,10 @@ app.get("/directory", function(req, res) {
     res.render("directory");
 });
 
+app.get("/books", function(req, res) {
+    res.render("books");
+});
+
 app.post("/signup", function(req, res){
 	var email = req.body.email;
 	var major = req.body.major;
