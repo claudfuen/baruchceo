@@ -18,8 +18,9 @@
 }
 
 .ceo-apply {
-    margin: 0px 50%;
-    max-width: 300px;
+    margin: 0px auto;
+    width: 300px;
+    max-width: 100%;
     border-radius: 8px;
 }
 
