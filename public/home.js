@@ -25,3 +25,7 @@ document.querySelector("#ceo-slack").addEventListener('click', function(){
 document.querySelector("#ceo-blog").addEventListener('click', function(){
     window.location.href = "https://medium.com/@collin.reed112/";
 })
+
+document.querySelector("#ceo-forum").addEventListener('click', function(){
+    window.location.href = "/forum";
+})

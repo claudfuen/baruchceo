@@ -32,6 +32,10 @@ app.get("/events", function(req, res) {
     res.render("events");
 });
 
+app.get("/forum", function(req, res) {
+    res.render("forum");
+});
+
 app.get("*", function(req, res) {
     res.redirect('/')
 });
