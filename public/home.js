@@ -15,7 +15,7 @@ document.querySelector("#ceo-events").addEventListener('click', function(){
 })
 
 document.querySelector("#ceo-apparel").addEventListener('click', function(){
-    window.location.href = "https://www.baruchceo.com";
+    window.location.href = "https:/ceo-baruch.myshopify.com";
 })
 
 document.querySelector("#ceo-slack").addEventListener('click', function(){
