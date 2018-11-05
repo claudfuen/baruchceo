@@ -36,6 +36,10 @@ app.get("/forum", function(req, res) {
     res.render("forum");
 });
 
+app.get("/forums", function(req, res) {
+    res.redirect("/forum");
+});
+
 app.get("*", function(req, res) {
     res.redirect('/')
 });
