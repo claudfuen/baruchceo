@@ -14,34 +14,58 @@
     <%- include partials/navbar.ejs %>
 
     <div class="container">
-        <div class="row mt-4">
+        <div class="row">
+            <div class="col">
+                <div class="p-3 mt-3 ceo-hero p-5">
+                    <div class="ceo-logo m-3">
+                        <img src="/images/logo.png" class="img-fluid ceo-logo">
+                    </div>
+                    <h5>Baruch’s <strong>College Entrepreneurial Organization</strong></h5>
+                    <p>We are a closely-knit student organization and community that empowers <br>
+                            members to successfully launch startups and build companies. </p>
+                    <a href="https://goo.gl/forms/MI8V5cIJynwbZGwJ3" class="btn btn-primary btn-lg text-light ceo-apply">Apply</a>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-4" id="ceo-menu-cards">
             <div class="col-sm-6 col-md-3" id="ceo-books">
                 
-                    <div class="card p-3 ceo-menu-card">
-                        <i class="fas fa-book-open fa-3x"></i>
+                    <div class="card p-3 mb-3 ceo-menu-card">
+                        <i class="fas fa-book-open fa-2x"></i>
                         <h5>Books</h5>
                     </div>
                 
             </div>
             <div class="col-sm-6 col-md-3" id="ceo-directory">
                 
-                    <div class="card p-3 ceo-menu-card">
-                        <i class="fas fa-users fa-3x"></i>
+                    <div class="card p-3 mb-3 ceo-menu-card">
+                        <i class="fas fa-users fa-2x"></i>
                         <h5>Directory</h5>
                     </div>
                 
             </div>
             <div class="col-sm-6 col-md-3" id="ceo-events">
                 
-                    <div class="card p-3 ceo-menu-card">
-                        <i class="fas fa-calendar fa-3x"></i>
+                    <div class="card p-3 mb-3 ceo-menu-card">
+                        <i class="fas fa-calendar fa-2x"></i>
                         <h5>Events Calendar</h5>
+                    </div>
+                
+            </div>
+            <div class="col-sm-6 col-md-3" id="ceo-apparel">
+                
+                    <div class="card p-3 mb-3 ceo-menu-card">
+                        <i class="fas fa-tshirt fa-2x"></i>
+                        <h5>Apparel</h5>
                     </div>
                 
             </div>
         </div>
     </div>
 
+    <!-- <%- include partials/social.ejs %> -->
+    <%- include partials/gallery.ejs %>
+    <%- include partials/footer.ejs %>
 
 </body>
 

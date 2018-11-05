@@ -13,3 +13,7 @@ document.querySelector("#ceo-directory").addEventListener('click', function(){
 document.querySelector("#ceo-events").addEventListener('click', function(){
     window.location.href = "/events";
 })
+
+document.querySelector("#ceo-apparel").addEventListener('click', function(){
+    window.location.href = "https://www.baruchceo.com";
+})

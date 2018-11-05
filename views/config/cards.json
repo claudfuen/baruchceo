@@ -1,0 +1,22 @@
+{
+    "cardItems": [
+        {
+            "name": "Books",
+            "id": "ceo-books",
+            "f-icon": "fas fa-book-open",
+            "url": "/books"
+        },
+        {
+            "name": "Directory",
+            "id": "ceo-directory",
+            "f-icon": "fas fa-users",
+            "url": "/directory"
+        },
+        {
+            "name": "Events",
+            "id": "ceo-events",
+            "f-icon": "fas a-calendar",
+            "url": "/events"
+        }
+    ]
+}
