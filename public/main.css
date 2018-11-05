@@ -50,3 +50,22 @@ background-attachment: fixed;
 background-size: cover;
 
 }
+
+.ceo-sub-directory {
+    background-color: #f5f5f5;
+}
+
+.ceo-sub {
+    transition: 0.1s linear;
+}
+
+.ceo-sub:focus {
+    outline: none;
+}
+.ceo-sub:hover {
+    background-color: #11111110;
+}
+
+.ceo-active {
+    background-color: #11111120;
+};

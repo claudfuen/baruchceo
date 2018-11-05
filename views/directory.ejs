@@ -6,9 +6,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>CEO - Member Directory</title>
+
 </head>
 <body>
     <%- include partials/navbar.ejs %>
-    <iframe class="airtable-embed" src="https://airtable.com/embed/shrQRTNa1CAGZuX2i?backgroundColor=red&viewControls=on" frameborder="0" onmousewheel="" width="100%" style="background: transparent; border: 1px solid #ccc; position: absolute; height: 100%; border: none"></iframe>
+    <div class="ceo-sub-directory py-2">
+        <div class="container">
+                <nav class="nav nav-pills nav-justified justify-content-center">
+                        <a class="nav-link ceo-sub text-dark mx-1" href="#members" id="members">Members</a>
+                        <a class="nav-link ceo-sub text-dark mx-1" href="#startups" id="startups">Startups</a>
+                        <a class="nav-link ceo-sub text-dark mx-1" href="#eboard" id="eboard">E-board</a>
+                      </nav>
+                </div>
+        </div>
+
+    <iframe id="ceo-iframe" class="airtable-embed" src="" frameborder="0" onmousewheel="" width="100%" style="background: transparent; border: 1px solid #ccc; position: absolute; height: 100%; border: none"></iframe>
 </body>
+
+<script>
+
+    var iframe = document.querySelector('#ceo-iframe');
+
+    function hashChange() {
+        window.scrollTo(0, 0);
+
+        document.getElementById('members').classList.remove('ceo-active')
+        document.getElementById('eboard').classList.remove('ceo-active')
+        document.getElementById('startups').classList.remove('ceo-active')
+
+        if (location.hash && location.hash === "#members") {
+            iframe.src ="https://airtable.com/embed/shrQRTNa1CAGZuX2i?backgroundColor=red&viewControls=on"
+            document.getElementById('members').classList.toggle('ceo-active')
+        } else if (location.hash && location.hash === "#eboard") {
+            iframe.src ="https://airtable.com/embed/shriDFePieQuVkPbW?backgroundColor=red&viewControls=on"
+            document.getElementById('eboard').classList.toggle('ceo-active')
+        } else if (location.hash && location.hash === "#startups") {
+            iframe.src ="https://airtable.com/embed/shrlGECszQKytcth3?backgroundColor=red&viewControls=on"
+            document.getElementById('startups').classList.toggle('ceo-active')
+        } else {
+            iframe.src ="https://airtable.com/embed/shrQRTNa1CAGZuX2i?backgroundColor=red&viewControls=on"
+            document.getElementById('members').classList.toggle('ceo-active')
+        }
+    }
+
+    hashChange();
+
+    window.addEventListener("hashchange", function() {
+        hashChange();
+    }, false);
+
+</script>
 </html>
