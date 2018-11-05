@@ -13,6 +13,10 @@
     background-color: #FFF;
 }
 
+.ceo-menu-card > h5 {
+    margin: 6px 0px 0px 0px;
+}
+
 .ceo-hero {
     text-align: center;
 }

@@ -21,3 +21,7 @@ document.querySelector("#ceo-apparel").addEventListener('click', function(){
 document.querySelector("#ceo-slack").addEventListener('click', function(){
     window.location.href = "https://join.slack.com/t/baruchceo/shared_invite/enQtNDAyNzMzMzAzNzk4LTczYmZlNDRiZWFjZmRlYTRjYjFiZTA5NTNlZGIwZTY2OWEzODIyMzAxYWU0N2Q0YWYyZjM3NTc3MGJhYzYyNTE";
 })
+
+document.querySelector("#ceo-blog").addEventListener('click', function(){
+    window.location.href = "https://medium.com/@collin.reed112/";
+})
