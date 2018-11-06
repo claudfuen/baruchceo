@@ -32,6 +32,10 @@ app.get("/events", function(req, res) {
     res.render("events");
 });
 
+app.get("/sharktank", function(req, res) {
+    res.render("shark-tank");
+});
+
 app.get("/forum", function(req, res) {
     res.render("forum");
 });
