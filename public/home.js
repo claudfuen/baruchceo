@@ -1,31 +1,18 @@
 
 
+let arr = [
+    ["#ceo-books", "/books"],
+    ["#ceo-directory", "/directory"],
+    ["#ceo-events", "/events"],
+    ["#ceo-apparel", "https:/ceo-baruch.myshopify.com"],
+    ["#ceo-slack", "https://join.slack.com/t/baruchceo/shared_invite/enQtNDAyNzMzMzAzNzk4LTczYmZlNDRiZWFjZmRlYTRjYjFiZTA5NTNlZGIwZTY2OWEzODIyMzAxYWU0N2Q0YWYyZjM3NTc3MGJhYzYyNTE"],
+    ["#ceo-blog", "https://medium.com/@collin.reed112/"],
+    ["#ceo-forum", "/forum"]
+];
 
-document.querySelector("#ceo-books").addEventListener('click', function(){
-    window.location.href = "/books";
-})
 
-document.querySelector("#ceo-directory").addEventListener('click', function(){
-    window.location.href = "/directory";
-})
-
-
-document.querySelector("#ceo-events").addEventListener('click', function(){
-    window.location.href = "/events";
-})
-
-document.querySelector("#ceo-apparel").addEventListener('click', function(){
-    window.location.href = "https:/ceo-baruch.myshopify.com";
-})
-
-document.querySelector("#ceo-slack").addEventListener('click', function(){
-    window.location.href = "https://join.slack.com/t/baruchceo/shared_invite/enQtNDAyNzMzMzAzNzk4LTczYmZlNDRiZWFjZmRlYTRjYjFiZTA5NTNlZGIwZTY2OWEzODIyMzAxYWU0N2Q0YWYyZjM3NTc3MGJhYzYyNTE";
-})
-
-document.querySelector("#ceo-blog").addEventListener('click', function(){
-    window.location.href = "https://medium.com/@collin.reed112/";
-})
-
-document.querySelector("#ceo-forum").addEventListener('click', function(){
-    window.location.href = "/forum";
-})
+arr.forEach(el => {
+    document.querySelector(el[0]).addEventListener('click', function(){
+        window.location.href = el[1];
+    })
+});
