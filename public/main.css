@@ -78,3 +78,27 @@ background-position: center;
 .ceo-announcement {
     background-color: #293fff;
 }
+
+
+#book-container > a > img {
+    border-radius: 3px;
+    transition: 100ms linear;
+    animation: bookFade 800ms linear 200ms 1;
+    max-width: 150px;
+}
+
+@keyframes bookFade {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 100;
+        transform: translate(0,0)
+    }
+}
+
+
+#book-container > a > img:hover {
+    box-shadow: 0px 6px 12px rgba(0,0,0,0.15)
+}
