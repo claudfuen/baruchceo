@@ -83,11 +83,12 @@ background-position: center;
 #book-container > a > img {
     border-radius: 3px;
     transition: 100ms ease-in-out;
-    animation: bookFade 1200ms ease-in-out 500ms 1;
+    animation: bookFade 1200ms ease-in-out forwards 500ms 1;
     max-width: 150px;
     filter: grayscale(.2);
     z-index: 3;
     margin: 10px 7px;
+    opacity: 0;
 }
 
 @keyframes bookFade {
@@ -96,6 +97,7 @@ background-position: center;
         transform: translateY(30px) scale(0.96);
     }
     100% {
+        opacity: 1;
         transform: translate(0,0) scale(1)
     }
 }
